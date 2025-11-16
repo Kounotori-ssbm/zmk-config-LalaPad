@@ -188,11 +188,11 @@
             sensor-bindings = <&scroll_down_up>, <&scroll_up_down>;
 
             bindings = <
-&kp TAB     &kp Q          &kp L          &kp U             &kp COMMA       &kp PERIOD     &kp F          &kp W        &kp R            &kp Y             &kp P              &kp EQUAL
-&kp GRAVE   &kp E          &kp I          &kp A             &kp O           &kp MINUS      &kp K          &kp T        &kp N            &kp S             &kp H              &lt 5 ENTER
-&kp SQT     &kp SEMICOLON  &kp Z          &kp X             &kp C           &kp V          &kp G          &kp D        &kp M            &kp J             &kp B              &kp SLASH
-&kp ESCAPE  &kp LEFT_WIN   &kp BACKSLASH  &kp LEFT_CONTROL  &kp LEFT_SHIFT  &lt 3 LANG2    &lt 4 LANG1    &kp RCTRL    &kp BACKSPACE    &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp RCTRL
-                           &allow_end     &allow_pagedown   &allow_home     &allow_pageup  &allow_pageup  &allow_home  &allow_pagedown  &allow_end
+&kp TAB     &kp Q          &kp L          &kp U             &kp COMMA       &kp PERIOD     &kp F          &kp W        &kp R                        &kp Y             &kp P              &kp EQUAL
+&kp GRAVE   &lt 3 E        &kp I          &kp A             &kp O           &kp MINUS      &kp K          &kp T        &kp N                        &kp S             &kp H              &lt 6 ENTER
+&kp SQT     &kp SEMICOLON  &kp Z          &kp X             &kp C           &kp V          &kp G          &kp D        &kp M                        &kp J             &kp B              &kp SLASH
+&kp ESCAPE  &kp LEFT_WIN   &kp BACKSLASH  &kp LEFT_CONTROL  &kp LEFT_SHIFT  &lt 3 LANG2    &lt 4 LANG1    &lt 5 SPACE  &mt RA(RIGHT_ALT) BACKSPACE  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp RCTRL
+                           &allow_end     &allow_pagedown   &allow_home     &allow_pageup  &allow_pageup  &allow_home  &allow_pagedown              &allow_end
             >;
         };
 
@@ -200,7 +200,7 @@
             display-name = "Default";
             bindings = <
 &kp TAB     &kp Q          &kp L          &kp U             &kp COMMA       &kp PERIOD     &kp F          &kp W        &kp R            &kp Y             &kp P              &kp EQUAL
-&kp GRAVE   &kp E          &kp I          &kp A             &kp O           &kp MINUS      &kp K          &kp T        &kp N            &kp S             &kp H              &lt 5 ENTER
+&kp GRAVE   &kp E          &kp I          &kp A             &kp O           &kp MINUS      &kp K          &kp T        &kp N            &kp S             &kp H              &lt 6 ENTER
 &kp SQT     &kp SEMICOLON  &kp Z          &kp X             &kp C           &kp V          &kp G          &kp D        &kp M            &kp J             &kp B              &kp SLASH
 &kp ESCAPE  &kp LG(LA(D))  &kp BACKSLASH  &kp LEFT_COMMAND  &kp LEFT_SHIFT  &lt 3 LANG2    &lt 4 LANG1    &kp RCTRL    &kp BACKSPACE    &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp RIGHT_COMMAND
                            &allow_end     &allow_pagedown   &allow_home     &allow_pageup  &allow_pageup  &allow_home  &allow_pagedown  &allow_end
@@ -246,11 +246,21 @@
             >;
         };
 
+        Mac-Control-Like {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+            >;
+        };
+
         MOUSE_R_LAYER {
             display-name = "mouse_r_layer";
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans     &trans     &trans     &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &mkp LCLK  &mkp MCLK  &mkp RCLK  &mo 6
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &mkp LCLK  &mkp MCLK  &mkp RCLK  &mo 7
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &mkp MB4   &mkp MB5   &trans     &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans     &trans     &trans     &trans
                 &trans  &trans  &trans  &trans  &trans  &trans  &trans     &trans
@@ -272,7 +282,7 @@
             display-name = "mouse_l_layer";
             bindings = <
 &trans  &trans     &trans     &trans     &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&mo 8   &mkp RCLK  &mkp MCLK  &mkp LCLK  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&mo 9   &mkp RCLK  &mkp MCLK  &mkp LCLK  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans     &mkp MB5   &mkp MB4   &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans     &trans     &trans     &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
                    &trans     &trans     &trans  &trans  &trans  &trans  &trans  &trans
