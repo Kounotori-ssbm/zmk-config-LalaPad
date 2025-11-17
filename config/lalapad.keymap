@@ -188,22 +188,22 @@
             sensor-bindings = <&scroll_down_up>, <&scroll_up_down>;
 
             bindings = <
-&kp TAB     &kp Q          &kp L          &kp U             &kp COMMA       &kp PERIOD     &kp F          &kp W        &kp R                        &kp Y             &kp P              &kp EQUAL
-&kp GRAVE   &lt 3 E        &kp I          &kp A             &kp O           &kp MINUS      &kp K          &kp T        &kp N                        &kp S             &kp H              &lt 6 ENTER
-&kp SQT     &kp SEMICOLON  &kp Z          &kp X             &kp C           &kp V          &kp G          &kp D        &kp M                        &kp J             &kp B              &kp SLASH
-&kp ESCAPE  &kp LEFT_WIN   &kp BACKSLASH  &kp LEFT_CONTROL  &kp LEFT_SHIFT  &lt 3 LANG2    &lt 4 LANG1    &lt 5 SPACE  &mt RA(RIGHT_ALT) BACKSPACE  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp RCTRL
-                           &allow_end     &allow_pagedown   &allow_home     &allow_pageup  &allow_pageup  &allow_home  &allow_pagedown              &allow_end
+&kp TAB      &kp Q          &kp L          &kp U             &kp COMMA       &kp PERIOD     &kp F          &kp W        &kp R                        &kp Y             &kp P              &kp EQUAL
+&lt 2 GRAVE  &lt 3 E        &kp I          &kp A             &kp O           &kp MINUS      &kp K          &kp T        &kp N                        &kp S             &kp H              &lt 6 ENTER
+&kp SQT      &kp SEMICOLON  &kp Z          &kp X             &kp C           &kp V          &kp G          &kp D        &kp M                        &kp J             &kp B              &kp SLASH
+&kp ESCAPE   &kp LEFT_WIN   &kp BACKSLASH  &kp LEFT_CONTROL  &kp LEFT_SHIFT  &lt 3 LANG2    &lt 5 LANG1    &lt 4 SPACE  &mt RA(RIGHT_ALT) BACKSPACE  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp RCTRL
+                            &allow_end     &allow_pagedown   &allow_home     &allow_pageup  &allow_pageup  &allow_home  &allow_pagedown              &allow_end
             >;
         };
 
         Default-for-MacOS {
             display-name = "Default";
             bindings = <
-&kp TAB     &kp Q          &kp L          &kp U             &kp COMMA       &kp PERIOD     &kp F          &kp W        &kp R            &kp Y             &kp P              &kp EQUAL
-&kp GRAVE   &lt 3 E        &kp I          &kp A             &kp O           &kp MINUS      &kp K          &kp T        &kp N            &kp S             &kp H              &lt 6 ENTER
-&kp SQT     &kp SEMICOLON  &kp Z          &kp X             &kp C           &kp V          &kp G          &kp D        &kp M            &kp J             &kp B              &kp SLASH
-&kp ESCAPE  &kp LG(LA(D))  &kp BACKSLASH  &kp LEFT_COMMAND  &kp LEFT_SHIFT  &lt 3 LANG2    &lt 4 LANG1    &kp RCTRL    &kp BACKSPACE    &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp RIGHT_COMMAND
-                           &allow_end     &allow_pagedown   &allow_home     &allow_pageup  &allow_pageup  &allow_home  &allow_pagedown  &allow_end
+&kp TAB      &kp Q          &kp L          &kp U             &kp COMMA       &kp PERIOD     &kp F          &kp W            &kp R                    &kp Y             &kp P              &kp EQUAL
+&lt 2 GRAVE  &lt 3 E        &kp I          &kp A             &kp O           &kp MINUS      &kp K          &kp T            &kp N                    &kp S             &kp H              &lt 6 ENTER
+&kp SQT      &kp SEMICOLON  &kp Z          &kp X             &kp C           &kp V          &kp G          &kp D            &kp M                    &kp J             &kp B              &kp SLASH
+&kp ESCAPE   &kp LG(LA(D))  &kp BACKSLASH  &kp LEFT_COMMAND  &kp LEFT_SHIFT  &lt 3 LANG2    &lt 5 LANG1    &mt RCTRL SPACE  &mt RIGHT_ALT BACKSPACE  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp RIGHT_COMMAND
+                            &allow_end     &allow_pagedown   &allow_home     &allow_pageup  &allow_pageup  &allow_home      &allow_pagedown          &allow_end
             >;
 
             sensor-bindings = <&scroll_down_up>, <&scroll_up_down>;
@@ -225,11 +225,21 @@
         Function-keys {
             display-name = "tertiary_layer";
             bindings = <
-&trans  &kp F1   &kp F2   &kp F3   &kp F4   &kp F5   &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp F6   &kp F7   &kp F8   &kp F9   &kp F10  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp F11  &kp F12  &kp F13  &kp F14  &kp F15  &trans  &kp F1  &kp F2  &kp F3  &trans  &trans
-&trans  &trans   &trans   &trans   &trans   &trans   &trans  &trans  &trans  &trans  &trans  &trans
-                 &trans   &trans   &trans   &trans   &trans  &trans  &trans  &trans
+&trans  &trans  &trans      &trans  &trans  &trans  &trans  &kp F7  &kp F8  &kp F9  &kp F10  &trans
+&trans  &trans  &trans      &trans  &trans  &trans  &trans  &kp F4  &kp F5  &kp F6  &kp F11  &trans
+&trans  &trans  &trans      &trans  &trans  &trans  &trans  &kp F1  &kp F2  &kp F3  &kp F12  &trans
+&trans  &trans  &kp DELETE  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans   &trans
+                &trans      &trans  &trans  &trans  &trans  &trans  &trans  &trans
+            >;
+        };
+
+        Mac-Control-Like {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
 
@@ -246,24 +256,14 @@
             >;
         };
 
-        Mac-Control-Like {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-            >;
-        };
-
         MOUSE_R_LAYER {
             display-name = "mouse_r_layer";
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans     &trans     &trans     &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &mkp LCLK  &mkp MCLK  &mkp RCLK  &mo 7
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &mkp MB4   &mkp MB5   &trans     &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans     &trans     &trans     &trans
-                &trans  &trans  &trans  &trans  &trans  &trans  &trans     &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans     &trans     &trans     &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &mkp LCLK  &mkp MCLK  &mkp RCLK  &mo 7   &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans     &mkp MB4   &mkp MB5   &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans     &trans     &trans     &trans  &trans
+                &trans  &trans  &trans  &trans  &trans  &trans     &trans     &trans
             >;
         };
 
