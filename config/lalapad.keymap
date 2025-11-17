@@ -178,6 +178,45 @@
             require-prior-idle-ms = <125>;
             bindings = <&kp>, <&kp>;
         };
+
+        tog_on: tog_on {
+            compatible = "zmk,behavior-toggle-layer";
+            label = "Toggle Layer On";
+            #binding-cells = <1>;
+        };
+
+        tog_off: tog_off {
+            compatible = "zmk,behavior-toggle-layer";
+            label = "Toggle Layer Off";
+            #binding-cells = <1>;
+            toggle-mode = "off";
+        };
+    };
+
+    macros {
+        bt0_for_Windows: bt0_for_Windows {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&tog_on 0 &tog_off 1>,
+                <&macro_wait_time 200>,
+                <&bt BT_SEL 0>,
+                <&macro_wait_time 500>;
+
+            label = "BT0_FOR_WINDOWS";
+        };
+
+        bt1_for_MacOS: bt1_for_MacOS {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&tog_on 1 &tog_off 0>,
+                <&macro_wait_time 200>,
+                <&bt BT_SEL 1>,
+                <&macro_wait_time 500>;
+
+            label = "BT1_FOR_MACOS";
+        };
     };
 
     keymap {
