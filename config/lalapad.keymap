@@ -226,7 +226,7 @@
 
         DEFAULT_LAYER {
             display-name = "Default";
-            sensor-bindings = <&scroll_down_up>, <&scroll_up_down>;
+            sensor-bindings = <&scroll_up_down>, <&scroll_down_up>;
 
             bindings = <
 &kp TAB      &kp Q          &kp L          &kp U            &kp COMMA         &kp PERIOD     &kp F          &kp W                     &kp R            &kp Y             &kp P              &kp EQUAL
@@ -240,14 +240,14 @@
         Default-for-MacOS {
             display-name = "Default";
             bindings = <
-&kp TAB      &kp Q          &kp L          &kp U            &kp COMMA         &kp PERIOD     &kp F          &kp W                    &kp R                     &kp Y             &kp P              &kp EQUAL
-&lt 2 GRAVE  &lt 3 E        &kp I          &kp A            &kp O             &kp MINUS      &kp K          &kp T                    &kp N                     &kp S             &kp H              &lt 6 ENTER
-&kp SQT      &kp SEMICOLON  &kp Z          &kp X            &kp C             &kp V          &kp G          &kp D                    &kp M                     &kp J             &kp B              &kp SLASH
-&kp ESCAPE   &kp LG(LA(D))  &kp BACKSLASH  &kp LEFT_SHIFT   &kp LEFT_COMMAND  &lt 3 LANG2    &lt 5 LANG1    &mt RIGHT_ALT BACKSPACE  &mt2 RIGHT_CONTROL SPACE  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp RIGHT_COMMAND
-                            &allow_end     &allow_pagedown  &allow_home       &allow_pageup  &allow_pageup  &allow_home              &allow_pagedown           &allow_end
+&kp TAB      &kp Q          &kp L          &kp U            &kp COMMA         &kp PERIOD     &kp F          &kp W                     &kp R                     &kp Y             &kp P              &kp EQUAL
+&lt 2 GRAVE  &lt 3 E        &kp I          &kp A            &kp O             &kp MINUS      &kp K          &kp T                     &kp N                     &kp S             &kp H              &lt 6 ENTER
+&kp SQT      &kp SEMICOLON  &kp Z          &kp X            &kp C             &kp V          &kp G          &kp D                     &kp M                     &kp J             &kp B              &kp SLASH
+&kp ESCAPE   &kp LG(LA(D))  &kp BACKSLASH  &kp LEFT_SHIFT   &kp LEFT_COMMAND  &lt 3 LANG2    &lt 5 LANG1    &mt2 RIGHT_ALT BACKSPACE  &mt2 RIGHT_CONTROL SPACE  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp RIGHT_COMMAND
+                            &allow_end     &allow_pagedown  &allow_home       &allow_pageup  &allow_pageup  &allow_home               &allow_pagedown           &allow_end
             >;
 
-            sensor-bindings = <&scroll_down_up>, <&scroll_up_down>;
+            sensor-bindings = <&scroll_up_down>, <&scroll_down_up>;
         };
 
         Number-keys {
@@ -266,11 +266,11 @@
         Function-keys {
             display-name = "tertiary_layer";
             bindings = <
-&trans  &trans  &trans          &kp UP_ARROW    &trans     &trans  &trans  &kp F7  &kp F8  &kp F9  &kp F10  &trans
-&trans  &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT  &trans  &trans  &kp F4  &kp F5  &kp F6  &kp F11  &trans
-&trans  &trans  &trans          &trans          &trans     &trans  &trans  &kp F1  &kp F2  &kp F3  &kp F12  &trans
-&trans  &trans  &kp DELETE      &trans          &trans     &trans  &trans  &trans  &trans  &trans  &trans   &trans
-                &trans          &trans          &trans     &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans          &kp UP_ARROW    &trans     &kp PRINTSCREEN  &trans  &kp F7  &kp F8      &kp F9  &kp F10  &trans
+&trans  &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT  &trans           &trans  &kp F4  &kp F5      &kp F6  &kp F11  &trans
+&trans  &trans  &trans          &trans          &trans     &trans           &trans  &kp F1  &kp F2      &kp F3  &kp F12  &trans
+&trans  &trans  &trans          &trans          &trans     &trans           &trans  &trans  &kp DELETE  &trans  &trans   &trans
+                &kp DELETE      &trans          &trans     &trans           &trans  &trans  &trans      &trans
             >;
         };
 
