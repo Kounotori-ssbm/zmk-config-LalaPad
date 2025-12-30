@@ -276,11 +276,11 @@
 
         Mac-Control-Like {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans   &trans     &kp RC(U)  &trans     &trans  &trans     &kp RC(BACKSPACE)  &trans     &trans  &kp RC(P)  &trans
+&trans  &kp END  &kp RC(I)  &kp HOME   &kp RC(O)  &trans  &trans     &kp RC(T)          &kp RC(N)  &trans  &kp RC(H)  &trans
+&trans  &trans   &kp RC(Z)  &trans     &kp RC(C)  &trans  &kp RC(G)  &kp RC(D)          &trans     &trans  &kp RC(B)  &trans
+&trans  &trans   &trans     &trans     &trans     &trans  &trans     &trans             &trans     &trans  &trans     &trans
+                 &trans     &trans     &trans     &trans  &trans     &trans             &trans     &trans
             >;
         };
 
