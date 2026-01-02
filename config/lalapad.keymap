@@ -229,22 +229,22 @@
             sensor-bindings = <&scroll_up_down>, <&scroll_down_up>;
 
             bindings = <
-&kp TAB      &kp Q          &kp L          &kp U            &kp COMMA         &kp PERIOD     &kp F          &kp W                     &kp R            &kp Y             &kp P              &kp EQUAL
-&lt 2 GRAVE  &lt 3 E        &kp I          &kp A            &kp O             &kp MINUS      &kp K          &kp T                     &kp N            &kp S             &kp H              &lt 6 ENTER
-&kp SQT      &kp SEMICOLON  &kp Z          &kp X            &kp C             &kp V          &kp G          &kp D                     &kp M            &kp J             &kp B              &kp SLASH
-&kp ESCAPE   &kp LEFT_WIN   &kp BACKSLASH  &kp LEFT_SHIFT   &kp LEFT_CONTROL  &lt 3 LANG2    &lt 5 LANG1    &mt2 RIGHT_ALT BACKSPACE  &lt 4 SPACE      &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp RCTRL
-                            &allow_end     &allow_pagedown  &allow_home       &allow_pageup  &allow_pageup  &allow_home               &allow_pagedown  &allow_end
+&kp TAB      &kp Q          &kp L          &kp U            &kp COMMA    &kp PERIOD     &kp F          &kp W                     &kp R            &kp Y             &kp P              &kp EQUAL
+&lt 2 GRAVE  &lt 3 E        &kp I          &kp A            &kp O        &kp MINUS      &kp K          &kp T                     &kp N            &kp S             &kp H              &lt 6 ENTER
+&kp SQT      &kp SEMICOLON  &kp Z          &kp X            &kp C        &kp V          &kp G          &kp D                     &kp M            &kp J             &kp B              &kp SLASH
+&kp ESCAPE   &kp LEFT_WIN   &kp BACKSLASH  &kp LCTRL        &kp LSHIFT   &lt 3 LANG2    &lt 5 LANG1    &mt2 RIGHT_ALT BACKSPACE  &lt 4 SPACE      &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp RCTRL
+                            &allow_end     &allow_pagedown  &allow_home  &allow_pageup  &allow_pageup  &allow_home               &allow_pagedown  &allow_end
             >;
         };
 
         Default-for-MacOS {
             display-name = "Default";
             bindings = <
-&kp TAB      &kp Q          &kp L          &kp U            &kp COMMA         &kp PERIOD     &kp F          &kp W                     &kp R                     &kp Y             &kp P              &kp EQUAL
-&lt 2 GRAVE  &lt 3 E        &kp I          &kp A            &kp O             &kp MINUS      &kp K          &kp T                     &kp N                     &kp S             &kp H              &lt 6 ENTER
-&kp SQT      &kp SEMICOLON  &kp Z          &kp X            &kp C             &kp V          &kp G          &kp D                     &kp M                     &kp J             &kp B              &kp SLASH
-&kp ESCAPE   &kp LG(LA(D))  &kp BACKSLASH  &kp LEFT_SHIFT   &kp LEFT_COMMAND  &lt 3 LANG2    &lt 5 LANG1    &mt2 RIGHT_ALT BACKSPACE  &mt2 RIGHT_CONTROL SPACE  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp RIGHT_COMMAND
-                            &allow_end     &allow_pagedown  &allow_home       &allow_pageup  &allow_pageup  &allow_home               &allow_pagedown           &allow_end
+&kp TAB      &kp Q          &kp L          &kp U            &kp COMMA       &kp PERIOD     &kp F          &kp W                     &kp R                     &kp Y             &kp P              &kp EQUAL
+&lt 2 GRAVE  &lt 3 E        &kp I          &kp A            &kp O           &kp MINUS      &kp K          &kp T                     &kp N                     &kp S             &kp H              &lt 6 ENTER
+&kp SQT      &kp SEMICOLON  &kp Z          &kp X            &kp C           &kp V          &kp G          &kp D                     &kp M                     &kp J             &kp B              &kp SLASH
+&kp ESCAPE   &kp LG(LA(D))  &kp BACKSLASH  &kp LEFT_WIN     &kp LEFT_SHIFT  &lt 3 LANG2    &lt 5 LANG1    &mt2 RIGHT_ALT BACKSPACE  &mt2 RIGHT_CONTROL SPACE  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp RIGHT_COMMAND
+                            &allow_end     &allow_pagedown  &allow_home     &allow_pageup  &allow_pageup  &allow_home               &allow_pagedown           &allow_end
             >;
 
             sensor-bindings = <&scroll_up_down>, <&scroll_down_up>;
@@ -258,8 +258,8 @@
 &trans  &trans  &trans      &trans  &trans  &trans  &kp KP_DOT    &kp NUMBER_7  &kp N8        &kp NUMBER_9  &kp NUMBER_0  &trans
 &trans  &trans  &trans      &trans  &trans  &trans  &kp KP_COMMA  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &trans        &trans
 &trans  &trans  &trans      &trans  &trans  &trans  &kp N0        &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans        &trans
-&trans  &trans  &kp DELETE  &trans  &trans  &trans  &trans        &trans        &trans        &trans        &trans        &trans
-                &trans      &trans  &trans  &trans  &trans        &trans        &trans        &trans
+&trans  &trans  &trans      &trans  &trans  &trans  &trans        &trans        &kp DELETE    &trans        &trans        &trans
+                &kp DELETE  &trans  &trans  &trans  &trans        &trans        &trans        &trans
             >;
         };
 
@@ -270,7 +270,7 @@
 &trans  &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT  &trans           &trans  &kp F4  &kp F5      &kp F6  &kp F11  &trans
 &trans  &trans  &trans          &trans          &trans     &trans           &trans  &kp F1  &kp F2      &kp F3  &kp F12  &trans
 &trans  &trans  &trans          &trans          &trans     &trans           &trans  &trans  &kp DELETE  &trans  &trans   &trans
-                &kp DELETE      &trans          &trans     &trans           &trans  &trans  &trans      &trans
+                &trans          &trans          &trans     &trans           &trans  &trans  &trans      &trans
             >;
         };
 
